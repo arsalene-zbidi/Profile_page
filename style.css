@@ -1,0 +1,130 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #6f98a8;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  /* Main content styles */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .profile {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .profile-info img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .profile-info img:hover {
+    transform: scale(1.05);
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 5px;
+    color: #6f98a8;
+  }
+  
+  p {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .skills,
+  .experience {
+    flex: 1;
+    margin-bottom: 40px;
+  }
+  
+  .skills h2,
+  .experience h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #6f98a8;
+  }
+  
+  .skills li,
+  .experience .experience-item {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .experience-item span {
+    color: #999;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #6f98a8;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+  #contact{
+    color: #fff;
+
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 7687px) {
+    main {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile,
+    .skills,
+    .experience {
+      width: 70%;
+      text-align: center;
+    }
+  
+    .profile-info img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  
